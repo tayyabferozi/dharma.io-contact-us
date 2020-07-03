@@ -1,0 +1,39 @@
+.Footer {
+  margin: 0 1.781rem;
+  padding: 3rem 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.Next {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.Footer > * {
+  font-size: 12px;
+}
+
+.Footer > * + * {
+  margin-left: 1.5rem;
+  margin-right: 0;
+  padding: 0 0.5rem;
+  font-size: 0.75rem;
+}
+
+@media screen and (max-width: 639px) {
+  .Footer {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 0;
+  }
+
+  .Footer > * + * {
+    padding: 0;
+  }
+
+  .Footer > * {
+    margin-top: 5px;
+  }
+}
