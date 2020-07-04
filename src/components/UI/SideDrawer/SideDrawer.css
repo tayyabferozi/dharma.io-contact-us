@@ -17,7 +17,9 @@
 
 .SideDrawer {
   width: 90%;
+  display: none;
   overflow-y: scroll;
+  overflow-x: hidden;
   padding: 1rem 2rem;
   height: 85vh;
   background-color: #fff;
@@ -26,10 +28,22 @@
   right: -90%;
   top: 0;
   transition: 0.75s ease;
+  animation: goFromview 0.75s ease;
 }
 
 .SideDrawer.Active {
-  right: 0;
+  display: block;
+  animation: comeInView 0.75s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes comeInView {
+  0% {
+    right: -90%;
+  }
+  100% {
+    right: 0;
+  }
 }
 
 .SideDrawer > .Title,

@@ -1,3 +1,13 @@
+.Contact {
+  padding: 0 2rem;
+}
+
+@media screen and (max-width: 576px) {
+  .Contact {
+    padding: 0;
+  }
+}
+
 .Contact h1,
 .Contact p {
   color: #253165;
@@ -23,11 +33,22 @@
 .Contact .CardContainer {
   max-width: 1170px;
   padding: 0 15px;
-  margin: 5rem auto;
+  margin: 5rem auto 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.Contact a {
+  width: 21.25rem;
+  /* width: 100%; */
+  display: block;
+  margin: 0 0 3rem;
+}
+
+.Contact a .Card {
+  margin: 0;
 }
 
 .Contact .Card {
@@ -60,6 +81,7 @@
   font-weight: 400;
   font-size: 1rem;
   margin-top: 20px;
+  text-align: center;
 }
 
 .Contact .Card button {
@@ -83,4 +105,48 @@
 .Contact .Card .CardImg img {
   width: 100%;
   border-radius: 4px;
+}
+
+@media screen and (max-width: 800px) {
+  .Contact .CardContainer {
+    justify-content: center;
+  }
+
+  .Contact .Card {
+    margin: 1rem;
+  }
+}
+
+.ContactForm .FormControl {
+  max-width: 30rem;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ContactForm .FormControl h6 {
+  font-size: 1rem;
+  width: 50%;
+  text-align: left;
+}
+
+.ContactForm .FormControl select,
+.ContactForm .FormControl input[type="email"] {
+  width: 50%;
+  display: block;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #4671a4;
+  color: #fff;
+  font-size: 0.875rem;
+  border: none;
+  outline: none;
+}
+
+.ContactForm .FormControl textarea {
+  width: 50%;
+  height: 7rem;
+  background-color: #4671a4;
+  display: block;
 }

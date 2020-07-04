@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Contact.css";
+import Map from "../UI/Map/Map";
 
 const Contact = () => {
   return (
@@ -18,6 +19,7 @@ const Contact = () => {
       <h3>hello@buzzworthystudio.com</h3>
 
       <div className="CardContainer">
+        {/* <a href="#Contact"> */}
         <div className="Card">
           <div className="CardImg">
             <img
@@ -28,9 +30,12 @@ const Contact = () => {
           <div className="CardBody">
             <h3>Want to join RippleNet?</h3>
             <p>Speak with a member of our sales team.</p>
-            <button>Contact Sales</button>
+            <button onClick={window.scrollTo.bind(null, 0, 2000)}>
+              Contact Form
+            </button>
           </div>
         </div>
+        {/* </a> */}
         <div className="Card">
           <div className="CardImg">
             <img
@@ -39,8 +44,8 @@ const Contact = () => {
             />
           </div>
           <div className="CardBody">
-            <h3>Want to join RippleNet?</h3>
-            <p>Speak with a member of our sales team.</p>
+            <h3>Have Press Inquiries?</h3>
+            <p>Contact us with press requests.</p>
             <button>Contact Press</button>
           </div>
         </div>
@@ -52,8 +57,8 @@ const Contact = () => {
             />
           </div>
           <div className="CardBody">
-            <h3>Want to join RippleNet?</h3>
-            <p>Speak with a member of our sales team.</p>
+            <h3>Questions About XRP?</h3>
+            <p>For the fastest answers, check our FAQs.</p>
             <button>See All FAQs</button>
           </div>
         </div>
@@ -95,6 +100,35 @@ const Contact = () => {
             <p>Speak with a member of our sales team.</p>
             <button>See All FAQs</button>
           </div>
+        </div>
+      </div>
+
+      <Map />
+
+      <div className="ContactForm">
+        <div className="FormControl">
+          <h6>I am a</h6>
+          <select>
+            <option>User</option>
+            <option>Retailer</option>
+          </select>
+        </div>
+        <div className="FormControl">
+          <h6>Email</h6>
+          <input type="email" />
+        </div>
+        <div className="FormControl">
+          <h6>Tell us more about your Enquiry</h6>
+          <select>
+            <option>Products</option>
+            <option>Onboarding</option>
+            <option>Refund</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div className="FormControl">
+          <h6>Message</h6>
+          <textarea />
         </div>
       </div>
     </div>

@@ -5,7 +5,6 @@ import "./SideDrawer.css";
 const SideDrawer = () => {
   const SideDrawerCloseHandler = () => {
     const body = document.getElementsByTagName("body")[0];
-    console.log(body);
     const sideDrawer = document.getElementById("SideDrawer");
     const sideDrawerWrapper = document.getElementById("SideDrawerWrapper");
     sideDrawer.classList.remove("Active");
